@@ -69,7 +69,75 @@ chmod u+x hello.py
 
 ```
 
+## PYTHON COMMENTS and MULTILINE STRINGS
+
+```bash
+# this is a comment in python
+"""
+This is no a comment
+This is a multiline string, and uses memory
+"""
+```
+
+## VARIABLES
+
+Lower case is used for variables, Python Keywords are forbiden as variables names.
+```bash
+my_string =  "This is a simple string" 
+print(my_string)
+my_string += " with" #you can add strings
+my_string = my_string + " addings" 
+print(my_string)
+my_string = 1 #a variable has no fixed format
+print(my_string)
+
+```
+
+## QUOTING
+
+```bash
+'single quoted strings' #String literal
+
+"double quoted strings" #String literal resulting the same 'single quoted strings' 
+
+'''
+this is a triple quoted
+multi-line string
+'''
+'\nthis is a triple quoted\nmulti-line string\n' # back slash n (\n) indicates a new line
+
+"'Single' in Double" # "'Single' in Double"
+'"Double" in Single' # '"Double" in Single'
+"\"Double\" in Double" # '"Double" in Double' by escaping with \
+```
+
+## OPERTORS
+
+Adding strings
+```bash
+"pass" + "word" # 'password'
+```
+Multiplying strings
+```bash
+"pass" * 4 # = 'passpasspasspass'
+```
 
 
+## OBJECTS IN PYTHON
 
+States and methods "state.behavior"
+```bash
+"my_string".find('t') # finds letter t and indicates possition = 4
+``` 
+Low-case 
+```bash
+"TesTinG".lower() # output a lower-case of the string
+``` 
 
+## ESCAPING
+
+```bash
+print("Tab\tDelimited") # Tab     Delimited
+print("New\nLine")  # New
+                    # Line
+print("New\\nLine") # New\nLine
