@@ -141,12 +141,13 @@ print("Tab\tDelimited") # Tab     Delimited
 print("New\nLine")  # New
                     # Line
 print("New\\nLine") # New\nLine
-
+```
 ## BOOLEANS and NUMBERS
 
 BOOLEANS can only be TRUE or FALSE, everything in Python is represented at some point as a boolean.
 
 NUMBERS
+
 ```bash
 2 + 2   # INT = integer
 4       #
