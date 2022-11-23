@@ -141,3 +141,91 @@ print("Tab\tDelimited") # Tab     Delimited
 print("New\nLine")  # New
                     # Line
 print("New\\nLine") # New\nLine
+
+## BOOLEANS and NUMBERS
+
+BOOLEANS can only be TRUE or FALSE, everything in Python is represented at some point as a boolean.
+
+NUMBERS
+```bash
+2 + 2   # INT = integer
+4       #
+
+2.0 + 2.0   # FLOAT = 
+4.0         # 
+
+4.5e9 == 4.5 * (10 ** 9)    # Scientific notation
+TRUE                        #
+```
+
+## NUMERIC OPERATOR
+SUM
+```bash
+2.0 + 2 #
+4.0     # if at list one FLOAT, the result will be FLOAT
+```
+MULTIPLICATION
+```bash
+3 * 9
+27
+```
+DIVISION
+```bash
+6 / 3
+3.0
+```
+FLOOR DIVISION
+How many times it is evenly divided
+```bash
+5 // 3
+1
+6 // 3
+2
+```
+REMINDER
+Ohter portion of the floor division. Can identify simply way whether a number divides cleanly by other (when is zero)
+```bash
+5 % 3
+2   # Whole nomber reminder
+12 % 2
+0   # Divides cleanly by 3
+```
+EXPONENT
+```bash
+2 ** 3
+8
+```
+## NUMBER SYSTEMS
+
+**Binary**
+
+Prefix 0b (0b101)
+
+**Octal**
+
+PRefix 0o (0o724)
+
+**Hexadecimal**
+
+Prefix 0x (0xFF012)
+
+**Converting to binary**
+
+15 / 2 = 7 with remainder of 1   # MOST SIGNIFICANT
+
+7 / 2 = 3 with remainder of 1       
+                                        
+3 / 2 = 1 with remainder of 1       
+
+1 / 2 = 0 with remainder of 1    # LESS SIGNIFICANT
+
+**Converting to decimal**
+
+(1\*2³) + (1\*2²) + (1\*2¹) + (1\*2⁰)
+
+**FLOAT numbers accuracy**
+Flotaing-Point numbers are stored as binary fractions in memory.
+Not all decimals can be represented by binary fractions.
+0.1 can conly be approximated by 0.100000000000000000005555111123125782...
+Most of the time this is not a problem.
+
