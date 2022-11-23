@@ -204,7 +204,7 @@ Prefix 0b (0b101)
 
 **Octal**
 
-PRefix 0o (0o724)
+Prefix 0o (0o724)
 
 **Hexadecimal**
 
