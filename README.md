@@ -224,8 +224,12 @@ Prefix 0x (0xFF012)
 (1\*2³) + (1\*2²) + (1\*2¹) + (1\*2⁰)
 
 **FLOAT numbers accuracy**
+
 Flotaing-Point numbers are stored as binary fractions in memory.
+
 Not all decimals can be represented by binary fractions.
+
 0.1 can conly be approximated by 0.100000000000000000005555111123125782...
-Most of the time this is not a problem.
+
+Most of the time this is not a problem, but in other, like when working with money it is, and for that money is preffered to be expressed in cents.
 
