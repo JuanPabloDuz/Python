@@ -234,3 +234,93 @@ Not all decimals can be represented by binary fractions.
 
 Most of the time this is not a problem, but in other, like when working with money it is, and for that money is preffered to be expressed in cents.
 
+## OPERATORS AND BINDINGS
+
+### Bitwise operators
+Two's compliment 
+```bash
+a = 0b010   # a = 2
+bin(a)      # '0b10'
+~a          # -1*a - 1 = -3
+bin(~a)     # 0b10
+```
+### AND OR XOR NOT
+**OR = a | b**
+```bash
+a=0b1001
+b=0b1101
+bin(a|b)    #0b1101
+```
+**AND = a & b**
+```bash
+a=0b1001
+b=0b1101
+bin(a&b)    #0b1000
+```
+**XOR = a ^ b**
+```bash
+a=0b1001
+b=0b1101
+bin(a^b)    #0b0101
+```
+
+### SHIFTING OPERATORS
+**Right shift**
+
+a >> x removes rightest x digits
+```bash
+a=0b1001
+bin(a>>2)    #0b10
+```
+**Left shift**
+
+a << x add zeros to the right side
+```bash
+a=0b1001
+bin(a<<2)    #0b100100
+```
+## BOOLEAN OPERATORS
+
+NOT
+```bash
+not True    # False
+```
+OR
+```bash
+True or True    # True
+False or True   # True
+False or False  # False
+True or False   # True
+```
+AND
+```bash
+True and True   # True
+False and True  # False
+False and False # False
+True and False  # False
+```
+## COMPARSION OPERATORS
+
+```bash
+1<2    # True
+2<1    # False
+1<=1   # True
+2.0<=3      # False
+2.0<=2      # True
+'a'<'b'     # True
+'a'>'b'     # False
+ord('a')    # 97
+ord('b')    # 98
+'bb'>'ba'   # True
+1 == 1      # True
+1.0 == 2    # False
+'a' ==  2   # False
+1 != 1      # False
+2 != 1      # True
+1 is 1      # True
+1.0 is 1    # False
+'a' is not 'a'  # False
+id('a')     # 140347512797424
+id('a')==id('a')    # True 
+[] is []    # False (listis are not inmutable)
+```
