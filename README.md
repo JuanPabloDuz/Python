@@ -1,4 +1,7 @@
 # GIT STEPS
+To download this just hit "<> Code" green button, and it will show the "Download ZIP" option.
+ 
+**Creating a new repository**
 Go into the directory containing the project.
 ```bash
 git init
@@ -322,5 +325,50 @@ ord('b')    # 98
 'a' is not 'a'  # False
 id('a')     # 140347512797424
 id('a')==id('a')    # True 
-[] is []    # False (listis are not inmutable)
+[] is []    # False (lists are not inmutable)
 ```
+### OPERATOR PRIORITY
+(binding)
+https://docs.python.org/3/reference/expressions.html#operator-precedence
+
+For whatever reason, the Python documentation shows the least binding operators first, but we'll talk about them from most binding to least. We'll leave the ones that we won't cover in this course out of the list though:
+
+Parenthesis and List/Dictionary/Set literals
+
+Accessing attributes (subscription, slicing, function/method call, attribute reference)
+
+Exponentiation (**)
+
+Positive, Negative, and bitwise complement
+
+Multiplication *, Division /, Floor Division //, Modulo %
+
+Addition +, Subtraction -
+
+Bitwise Shifts << & >>
+
+Bitwise AND &
+
+Bitwise XOR ^
+
+Bitwise OR |
+
+Comparison operators (in, not in, is, is not, <, >, <=, >=, ==, !=)
+
+Boolean NOT not
+
+Boolean AND and
+
+Boolean OR or
+
+Conditions if
+
+examples:
+```bash
+14 & 3 * 2 + 4 # 10
+14 & 3 * (2 + 4) # 2
+(14 & 3) * 2 + 4 # 8
+14 & (3 * 2) + 4 # 10
+```
+## TYPECASTING
+changing types
