@@ -15,8 +15,8 @@ git branch -M main
 git remote add origin git@github.com:your_user/your_repo_name.git
 git push -u origin main
 ```
-
-# INSTALLING PYTHON
+# 2
+## INSTALLING PYTHON
 
 ## INSTALL pyenv for version control
 pyenv - is a simple Python version manager tool, which allows you easily switch between multiple versions of Python. You can set local or global system-wide Python versions via the tool.
@@ -54,6 +54,7 @@ python shell 3.7.6
 python --version
 ```
 
+# 3
 ## REPL
 Great place to test things
 Access:
@@ -71,7 +72,7 @@ chmod u+x hello.py
 ./hello.py 
 
 ```
-
+# 4
 ## PYTHON COMMENTS and MULTILINE STRINGS
 
 ```bash
@@ -199,6 +200,7 @@ EXPONENT
 2 ** 3
 8
 ```
+# 5
 ## NUMBER SYSTEMS
 
 **Binary**
@@ -237,6 +239,7 @@ Not all decimals can be represented by binary fractions.
 
 Most of the time this is not a problem, but in other, like when working with money it is, and for that money is preffered to be expressed in cents.
 
+# 6
 ## OPERATORS AND BINDINGS
 
 ### Bitwise operators
@@ -365,10 +368,44 @@ Conditions if
 
 examples:
 ```bash
-14 & 3 * 2 + 4 # 10
-14 & 3 * (2 + 4) # 2
-(14 & 3) * 2 + 4 # 8
-14 & (3 * 2) + 4 # 10
+14 & 3 * 2 + 4      # 10
+14 & 3 * (2 + 4)    # 2
+(14 & 3) * 2 + 4    # 8
+14 & (3 * 2) + 4    # 10
 ```
+# 7
 ## TYPECASTING
 changing types
+
+```bash
+float(1)    # 1.0
+int(1.3)    # 1
+int(1.6)    # 1
+str(1.0)    # '1.0'
+float('1.2')  # 1.2
+int('1.2')  # error
+bool(1)     # true
+bool(2.4)   # true
+bool('tada')    # true
+# mostly everything will be true
+bool(0)     # false
+bool(0.0)     # false
+bool('')     # false
+# and
+1 and 0     # true and false = false = 0
+0 and 'this'   # 0
+'this' and 0   # 0
+'this' and 'that'   # 'that'
+'this' and 0 and 'that'   # 0 (returns first false value)
+# or
+1 or 0   # 1
+0 or 1   # 1
+0 or ""   # ''
+0 or 1 or 'this'   # 1 (returns first true value)
+# not
+not ""  # true
+not 1   # false
+```
+## INPUT
+
+
