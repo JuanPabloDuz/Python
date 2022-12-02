@@ -8,4 +8,6 @@ age = int(input("how old are you? "))
 # print("is " + str(age) + " years old", end=" ")
 # print("favorite color of " + str(name) + " is " + str(color) + ".", end=" ")
 
-print(name, 'is', age, 'years old and loves the color', color + '.', sep=" ")
+print(name, 'is', age, 'years old and loves the color', color + '.', sep=" ") # default separator is " "
+
+
