@@ -412,5 +412,37 @@ See:
 /code/bio.py
 /code/to-celsius.py
 
+# 8
+## INMUTABILITY
 
+Most of the types are inmutable.
 
+```bash
+my_string = 'test'  #
+id(my_string)          #
+my_str.capitalize() #'Testing'
+otrher = 'test'
+id(other) == id(my_string) # True
+
+```
+
+## LEN function
+Length, number of characters
+```bash
+len('hello') # 5
+```
+
+## INDEXING & SLICING
+
+```bash
+my_string = 'testing'
+my_string[0]    # 't' - square brakets are for indexing
+my_string{-2]   # 'n' - negative indexing
+my_string[3:5]  # 'ti' - slicing from index 3 through 4 (>5)
+my_string[3:len(my_tring)]  # 'ting' - slicing from index 0 through before the end
+my_string[3:]  # 'ting' - slicing from index 0 through the end
+my_string[0:7:2]  # 'tsig' - slicing from index 0 through 6 with step of 2
+my_string[:7:2]  # 'tsig' - slicing from index 0 through 6 with step of 2
+my_string[::2]  # 'tsig' - slicing from index 0 through the end with step of 2
+my_string[::-1]  # 'gnitset' - clever way to reverse strings
+```
