@@ -446,3 +446,4 @@ my_string[:7:2]  # 'tsig' - slicing from index 0 through 6 with step of 2
 my_string[::2]  # 'tsig' - slicing from index 0 through the end with step of 2
 my_string[::-1]  # 'gnitset' - clever way to reverse strings
 ```
+see /code/string-info.py
