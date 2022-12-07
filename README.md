@@ -406,6 +406,11 @@ bool('')     # false
 not ""  # true
 not 1   # false
 ```
-## INPUT
+## INPUT and PRINT
+
+See:
+/code/bio.py
+/code/to-celsius.py
+
 
 
