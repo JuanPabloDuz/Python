@@ -446,7 +446,7 @@ my_string[:7:2]  # 'tsig' - slicing from index 0 through 6 with step of 2
 my_string[::2]  # 'tsig' - slicing from index 0 through the end with step of 2
 my_string[::-1]  # 'gnitset' - clever way to reverse strings
 ```
-see /code/string-info.py
+see /code/strings.py
 
 # 9
 ## LISTS
@@ -492,3 +492,18 @@ list_1 = [9, 2, 1, 4, 5]
 sorted(list_1)          # [1, 2, 4, 5, 9]
 list(reversed(list_1))  # [5, 4, 1, 2, 9]
 ```
+## NESTED LISTS: MATRIX AND CUBES
+
+```bash
+matrix_1 = [[1, 2, 3], 
+            [4, 5, 6]]
+row_count = len(matrix_1)
+row_count                   # 2
+column_count = len(matrix_1[0])
+column_count                # 3
+matrix_1[0][0]              # 1
+matrix_1[1][0]              # 4
+```
+A cube is a matrix with same number of columns and rows
+
+Check lists.py
