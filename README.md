@@ -447,3 +447,48 @@ my_string[::2]  # 'tsig' - slicing from index 0 through the end with step of 2
 my_string[::-1]  # 'gnitset' - clever way to reverse strings
 ```
 see /code/string-info.py
+
+# 9
+## LISTS
+Collection of other items. 
+```bash
+list_1 = [1, 2, 3, 4, 5]    
+List_2 = ['a', 1, 1.0, False]
+List_1[0]   # 1 - Indexing
+List_1[0:2] # [1, 2] - Slicing a List results a List
+List_1[0::2] # [1, 3, 5] - Steping also works
+```
+Lists are mutable.
+
+```bash
+list_1[0] = 'a'
+list_1              # ['a', 2, 3, 4, 5]
+List_1 + [7, 8, 9]  # contactenate list
+list_1              # ['a', 2, 3, 4, 5, 7, 8, 9]
+List_1 += [7, 8, 9]  # Creates a new list and reasigns it
+list_1              # ['a', 2, 3, 4, 5, 7, 8, 9]
+list_1[1:3] = ['b', 'c']
+list_1              # ['a', 'b', 'c', 4, 5, 7, 8, 9]
+```
+Delete items
+```bash
+list_1[3:] = []     # Slice a part and reasign it to keep it
+list_1              # ['a', 'b', 'c']
+del list_1[0]       # deletes an item or entire list
+list_1              # ['b', 'c']
+```
+
+## LIST FUNCTIONS AND METHODS
+
+```bash
+list_1.append(4)        # appends at the end
+list_1                  # ['b', 'c', 4]
+list_1.insert(0, 'a')   # inserts an item in specific possition
+list_1                  # ['a', 'b', 'c', 4]
+list_1.index(2)         # 'c'
+'d' in list_1           # False - checks if an item is in a list
+'d' not in list_1       # True
+list_1 = [9, 2, 1, 4, 5] 
+sorted(list_1)          # [1, 2, 4, 5, 9]
+list(reversed(list_1))  # [5, 4, 1, 2, 9]
+```
