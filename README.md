@@ -507,3 +507,27 @@ matrix_1[1][0]              # 4
 A cube is a matrix with same number of columns and rows
 
 Check lists.py
+
+# 10
+## TUPLES
+Inmutable type list of items
+```bash
+tuple_1=(2.0, 4.0)
+tuple_1[0] = 1  # err
+tuple_1= tuple_1 + (6.0)    # (2.0, 4.0, 6.0)
+x, y, z= tuple_1            # X=2.0, y=4.0, z=6.0
+print("My name is %s %s" % ("Juan", "Pablo"))    # unpacking tuple
+                                                 # My name is Juan Pablo
+```
+Lists and Tuples
+```bash
+list_1 = [1, 2, 3]
+tuple_2 = (list_1, 1)
+tuple_2     # ([1, 2, 3], 1)
+list_2 = [1, 2, tuple_2]
+list_2      # [1, 2, ([1, 2, 3], 1)]
+list_2.append(4)
+tuple_2     # ([1, 2, 3, 4], 1)
+```
+Even do tuples are inmutable, lists contained in tuples can change.
+
