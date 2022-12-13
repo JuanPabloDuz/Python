@@ -115,7 +115,7 @@ multi-line string
 "\"Double\" in Double" # '"Double" in Double' by escaping with \
 ```
 
-## OPERTORS
+## OPERATORS
 
 Adding strings
 ```bash
@@ -146,7 +146,7 @@ print("New\nLine")  # New
                     # Line
 print("New\\nLine") # New\nLine
 ```
-## BOOLEANS and NUMBERS
+## BOOLEANS AND NUMBERS
 
 BOOLEANS can only be TRUE or FALSE, everything in Python is represented at some point as a boolean.
 
@@ -163,7 +163,7 @@ NUMBERS
 TRUE                        #
 ```
 
-## NUMERIC OPERATOR
+## NUMERIC OPERATORS
 SUM
 ```bash
 2.0 + 2 #
