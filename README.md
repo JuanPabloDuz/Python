@@ -531,3 +531,13 @@ tuple_2     # ([1, 2, 3, 4], 1)
 ```
 Even do tuples are inmutable, lists contained in tuples can change.
 
+# 11
+## Dictionaries
+
+```bash
+ages = {'juan': 43, 'nadia': 56, 'kevin': 19}
+ages            # {'juan': 43, 'nadia': 56, 'kevin': 19}
+ages['juan']    # 43
+ages['caro'] = 33   # {'juan': 43, 'nadia': 56, 'kevin': 19, 'caro': 33}
+```
+
