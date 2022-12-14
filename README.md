@@ -533,11 +533,23 @@ Even do tuples are inmutable, lists contained in tuples can change.
 
 # 11
 ## Dictionaries
+Dictionaries are mutable, if the key exists the value can be changed, if not exist can be added.
 
 ```bash
 ages = {'juan': 43, 'nadia': 56, 'kevin': 19}
 ages            # {'juan': 43, 'nadia': 56, 'kevin': 19}
 ages['juan']    # 43
-ages['caro'] = 33   # {'juan': 43, 'nadia': 56, 'kevin': 19, 'caro': 33}
+ages['caro'] = 33  
+ages             # {'juan': 43, 'nadia': 56, 'kevin': 19, 'caro': 33}
+ages['juan'] = 44   
+ages             # {'juan': 44, 'nadia': 56, 'kevin': 19, 'caro': 33}
+del ages['nadia']
+ages             # {'juan': 43, 'kevin': 19, 'caro': 33}
+nadia in ages   # True
+juan in ages    # False
+ages_2 = dict(juan=43, nadia=56, kevin=19) # dict function
+ages_2          # {'juan': 43, 'nadia': 56, 'kevin': 19}
+ages_3 = dict([('juan',43), ('nadia',56), ('kevin', 19)]) # from tuples
+ages_2          # {'juan': 43, 'nadia': 56, 'kevin': 19}
 ```
 
