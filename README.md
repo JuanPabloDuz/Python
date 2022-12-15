@@ -561,3 +561,5 @@ ages.values()         # dict_values([43, 56, 19])
 list(ages.keys())   # [43, 56, 19]
 ages.items()         # dict_items([('juan',43), ('nadia',56), ('kevin', 19)])
 list(ages.items())   # [('juan',43), ('nadia',56), ('kevin', 19)]
+```
+See /code/dictionaries.py

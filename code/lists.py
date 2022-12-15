@@ -31,6 +31,7 @@ assert u_list == ['juan', 'cata', 'lucia'], f"Expected `u_list` to be ['juan', '
 u_list = u_list + ['andre', 'ana', 'luis']
 assert u_list == ['juan', 'cata', 'lucia', 'andre', 'ana', 'luis'], f"Expected `u_list` to be ['juan', 'cata', 'lucia', 'andre', 'ana', 'luis'] but got: {repr(u_list)}"
 print(u_list)
+
 # 7) Slice the u_list lists to return the 3rd and 4th items and assign the result to `center_u_list`
 center_u_list=u_list[3:5]
 print(center_u_list)
