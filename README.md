@@ -563,3 +563,21 @@ ages.items()         # dict_items([('juan',43), ('nadia',56), ('kevin', 19)])
 list(ages.items())   # [('juan',43), ('nadia',56), ('kevin', 19)]
 ```
 See /code/dictionaries.py
+
+# 12
+## STRINGS
+Multiple ways to encode strings
+Default Unicode UTF-8. Each string has a code, there are over a millon codes.
+Unicode Transformation Format.
+ASCII - 256 codes (128 valid on UTF-8)
+```bash
+ord('a')        # 97
+ord('™')        # 8482
+U+2122          # 8482 - hexa format
+ord('\u2122')   # 8482
+'\u2122'        # '™'
+chr(8482)       # '™'
+```
+
+
+
