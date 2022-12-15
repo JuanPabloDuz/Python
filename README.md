@@ -552,4 +552,12 @@ ages_2          # {'juan': 43, 'nadia': 56, 'kevin': 19}
 ages_3 = dict([('juan',43), ('nadia',56), ('kevin', 19)]) # from tuples
 ages_2          # {'juan': 43, 'nadia': 56, 'kevin': 19}
 ```
-
+**Methods to give access to dictionaries**
+```bash
+ages = {'juan': 43, 'nadia': 56, 'kevin': 19}
+ages.keys()         # dict_keys(['juan', 'nadia', 'kevin'])
+list(ages.keys())   # ['juan', 'nadia', 'kevin']
+ages.values()         # dict_values([43, 56, 19])
+list(ages.keys())   # [43, 56, 19]
+ages.items()         # dict_items([('juan',43), ('nadia',56), ('kevin', 19)])
+list(ages.items())   # [('juan',43), ('nadia',56), ('kevin', 19)]
