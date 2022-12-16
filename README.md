@@ -578,6 +578,31 @@ ord('\u2122')   # 8482
 '\u2122'        # '™'
 chr(8482)       # '™'
 ```
+**Strings Methods**
+
+string.method()
+
+.lower()
+.upper()
+.capitalize()
+.title()
+.isascii()
+.islower()
+.isupper()
+.istitle()
+.isspace()
+.isdecimal()
+.isdigit()
+.isnumeric()
+.isalpha()
+.isalnum()
+.isidentifier()
+.isprintable()
+
+**Chained methods**
+
+string.method().method()
+
 
 
 
