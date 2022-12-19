@@ -603,6 +603,32 @@ string.method()
 
 string.method().method()
 
+**Stringes as tokens**
 
+.split()
+
+```bash
+url = "http://example.com/users/juan"
+user = url.split('/')[-1]
+user                         # juan
+```
+
+.join()
+
+```bash
+phrase = "This is Python"
+words = phrase.split()
+", ".join(words)    # This, is, Python"
+'\n'.join(words)    # This
+                    # is
+                    # Python
+```
+
+.format()
+
+```bash
+url = "http://example.com/{0}/{1}/{0}"
+url.format('user','juan')  # 'http://example.com/user/juan'
+```
 
 
