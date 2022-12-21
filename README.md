@@ -631,4 +631,43 @@ url = "http://example.com/{0}/{1}/{0}"
 url.format('user','juan')  # 'http://example.com/user/juan'
 ```
 
+# 13
+## CONDITIONALS
 
+**IF**
+
+To indent code 4 spaces should be used.
+```bash
+if 'a' < 'b':
+    print("was true")
+else:
+    print("was false")
+
+```
+```bash
+if False:
+    print("was true")
+else:
+    print("was false")
+
+```
+
+```bash
+if 'a' > 'b':
+    print("1'st was true")
+elif 'c' > 'g':
+    print("2'nd was true")
+else:
+    print("none was true")
+
+```
+**PASS**
+
+Useful for leaving structures of code beforehand
+```bash
+if False:
+    print("was true")
+else:
+    pass
+
+```
