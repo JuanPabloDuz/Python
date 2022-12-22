@@ -671,3 +671,34 @@ else:
     pass
 
 ```
+
+# 14
+## LOOPING
+
+### WHILE
+
+"while CONDITION:"
+If condition is fixed it will loop infinetly.
+
+```bash
+count = 1
+while count <= 3:
+    print("loop")
+    count =+ 1  # 1
+                # 2
+                # 3
+```
+### FOR
+"for VAR IN SEQUENCE:"
+
+Works for lists, tuples, dictionaries and strings
+
+```bash
+names = ['juan', 'ana', 'cata']
+for name in names:
+    print(name) # juan
+                # ana
+                # cata
+
+```
+
