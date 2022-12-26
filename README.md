@@ -696,9 +696,33 @@ Works for lists, tuples, dictionaries and strings
 ```bash
 names = ['juan', 'ana', 'cata']
 for name in names:
-    print(name) # juan
+    print(name) 
+                # juan
                 # ana
                 # cata
 
 ```
+
+### NESTING LOOPS & CONDITIONALS
+
+```bash
+count = 1
+while count <= 8:
+    if count % 4 == 0:
+        print(f"selected {count}")
+        count += 1
+        continue
+    print(f"others {count}")
+    count += 1
+                # others 1
+                # others 2
+                # others 3
+                # selected 4
+                # others 5
+                # others 6
+                # others 7
+                # selected 8
+  
+```
+**"continue" :** To ignore remaining lines in the conditional.
 
