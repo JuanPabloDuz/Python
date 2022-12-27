@@ -724,5 +724,92 @@ while count <= 8:
                 # selected 8
   
 ```
-**"continue" :** To ignore remaining lines in the conditional.
+**"continue" :** To ignore remaining lines in the conditional, stop the execution of the loop for the interation.
 
+```bash
+count = 1
+while count <= 8:
+    if count % 4 == 0:
+        print(f"selected {count}")
+        break
+    print(f"others {count}")
+    count += 1
+                # others 1
+           
+```
+**"break" :** To ignore remaining lines in the conditional and stop the loop completely.
+
+```bash
+count = 1
+for i in [1, 2, 3, 4]:
+    print(i)
+else:
+    print("loop completed")
+            # 1
+            # 2
+            # 3
+            # 4
+            # loop completed           
+```
+
+**"else" :** Usable with If, while and for. Used with break to search in lists for example.
+
+```bash
+count = 1
+for i in [101, 122, 36, 14]:
+    if i == 36:
+        print("36 is in the list")
+        break
+else:
+    print("36 is no in the list")
+            # 36 is in the list      
+```
+**"range" :** To simplefy list creation.
+
+range(start, end, step)
+
+```bash
+count = 1
+for _ in range(4):  # or range(1,4,1)
+    print("looping range")
+        # looping range      
+        # looping range
+        # looping range
+        # looping range
+```
+**List comprehensions**
+
+```bash
+colors = ['red', 'pink', 'green']
+uppercase_colors = []
+for color in colors:  
+    uppercase_colors.append(color.upper())
+    print(uppercase_colors)
+            # ['RED', 'PINK', 'GREEN']
+```
+which can be reduced to:
+
+```bash
+colors = ['red', 'pink', 'green']
+uppercase_colors = [ color.upper() for color in colors]  
+print(uppercase_colors)
+            # ['RED', 'PINK', 'GREEN']
+```
+or
+
+```bash
+colors = ['red', 'pink', 'green']
+for color in colors:  
+    if color in ['red', 'pink']: 
+    warms.append(color)
+    print(warms)
+            # ['red', 'pink']
+```
+which can be reduced to:
+
+```bash
+colors = ['red', 'pink', 'green']
+warms = [ color for color in colors if color in ['red', 'pink']]  
+print(wams)
+            # ['red', 'pink']
+```
