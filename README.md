@@ -813,3 +813,59 @@ warms = [ color for color in colors if color in ['red', 'pink']]
 print(wams)
             # ['red', 'pink']
 ```
+# 15 
+## FUNCTION BASICS
+
+**def function_name(parameter#1, parameter#2, ... )**
+
+```bash
+def print_name(name):
+    print(f"Name is {name}")
+
+print_name          # <function print_name at 0x7fc2eb886ef0>
+print_name("juan")  # Name is juan
+```
+### Parameters vs Arguments
+Parameter are the variables created with the function, arguments are the values you pass for the parameters when calling the function.
+
+```bash
+def print_name(name, age, city):   
+    return f"Name is {name}, age is {age} from {city}"
+    return age >= 18
+
+print_name('juan', 14, 'bue')      # arguments in order for each parameter
+'Name is juan, age is 14 from bue'
+
+print_name(age= 99, name='juan', city='bue')      # arguments by keyword for each parameter
+'Name is juan, age is 99 from bue'
+
+```
+Possitional and keyword arguments can be mixed. But once a keyword is used remaining arguments shall be as keywords too.
+
+```bash
+def print_name(name, age, city):   
+    return age >= 18
+
+print_name('juan', 14, 'bue')      # False
+
+print_name(age= 99, name='juan', city='bue')      # True
+
+```
+
+Once a parameter is defined by default in the functions, all the parameters must have default arguments.
+
+**RECURSION**
+
+Python does not have a tail call to optimize recursive loop calculations, so it is something to have in mind since it can make a function to never stop.
+
+```bash
+def fibonacci(possition)
+    if possition == 0:
+        return 0
+    elif possition == 1:
+        return 1
+asked_poss=int(input("which possition of fibonacci you need? "))
+print(fibonacci(asked_poss))
+```
+Max possition 39.
+    
