@@ -612,6 +612,9 @@ url = "http://example.com/users/juan"
 user = url.split('/')[-1]
 user                         # juan
 ```
+.split(maxsplit=1)
+
+Python's split() method splits a string into a list of substrings using a specified delimiter. The optional parameter maxsplit limits the number of splits that will occur. For example, if maxsplit is set to 1, the string will be split into two substrings, with the delimiter appearing once.
 
 .join()
 
@@ -868,4 +871,4 @@ asked_poss=int(input("which possition of fibonacci you need? "))
 print(fibonacci(asked_poss))
 ```
 Max possition 39.
-    
+
