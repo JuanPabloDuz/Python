@@ -867,8 +867,67 @@ def fibonacci(possition)
         return 0
     elif possition == 1:
         return 1
+    return fibonacci(possition-2)+fibonacci(possition-1)
+    
 asked_poss=int(input("which possition of fibonacci you need? "))
 print(fibonacci(asked_poss))
 ```
 Max possition 39.
+
+# 17
+## GENERATORS
+
+Generator functions allow you to declare a function that behaves like an iterator, but using minimal resources. Just get next item but without calculating all the previous big list. So it can be maked an infinite list that only calculates the items needed.
+
+```bash
+def range_gen(stop, start=1, step=1):
+    num = start
+    while num <= stop:
+        yield num   #yield is a return that stops the loop
+        num += step
+```
+Used as
+
+```bash
+generator = gen(4)
+next(generator)     # 1
+next(generator)     # 2
+next(generator)     # 3
+next(generator)     # 4
+next(generator)     # 5
+```
+or
+```bash
+for num in range_gen(5)
+    print(num)
+                    # 1
+                    # 2
+                    # 3
+                    # 4
+                    # 5
+```
+Or you can conver a generator in to a list
+
+```bash
+list(generator)
+                    # [1, 2, 3, 4, 5]
+```
+Fibonacci
+```bash
+a, b = 0, 1
+while True:
+    a, b = b, a + b
+    yield a
+
+fib = gen_fib()
+next(fib)       # 1
+next(fib)       # 1
+next(fib)       # 2
+next(fib)       # 3
+next(fib)       # 5
+```
+Using lists
+```bash
+fib = gen_fib()
+[next(fib) for _ in range(50)][-1]      #12586269025
 
