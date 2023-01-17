@@ -930,4 +930,5 @@ Using lists
 ```bash
 fib = gen_fib()
 [next(fib) for _ in range(50)][-1]      #12586269025
+```
 
