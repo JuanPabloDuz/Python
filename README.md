@@ -932,3 +932,18 @@ fib = gen_fib()
 [next(fib) for _ in range(50)][-1]      #12586269025
 ```
 
+# 17
+## Scoping
+
+Refers to scope of variables in diferent code
+
+Condicitonals and loops do not define their own scopes.
+
+Other wise, variables assigned within a function remain there unless it's defined as global.
+
+Name Hiding or Shadowing, meaning the confusion that can be implied using same variable name a diferent levels of scope.
+
+Some people preffer not to use names that match names within functions they are using. Others will say it is ok, but a good middle point will be to use the same name if it makes sense.
+
+You can use variables defined in larger scopes, but not other wise unless it is defined as global.
+
